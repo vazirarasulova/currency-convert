@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <title>Currency</title>
+</head>
+<body>
+  <section class="currency">
+    <div class="container">
+      <h1 class="currency__title text-center my-5">Currency converter Money Convert</h1>
+
+      <form class="form" method="post">
+        <div class="d-flex justify-content-center">
+          <label class="form-label w-25 me-3">
+            <input type="number" class="form__input form-control py-2" name="movie name" placeholder="Enter the amount of money">
+          </label>
+
+          <label class="form-label  me-3">
+            <select class="form__select form-select py-2" name="all" >
+              <option value="" selected>choose the type of currency</option>
+              <option value="0.000091">usd</option>
+              <option value="0.0052">rubl</option>
+              <option value="0.000085">euro</option>
+            </select>
+          </label>
+
+          <button class="form__button btn btn-outline-primary w-25 px-1 py-1" type="submit">click</button>
+        </div>
+        <span class="form__result d-block w-25 my-4 mx-auto  bg-light text-center py-2  border border-2"></span>
+      </form>
+
+    </div>
+  </section>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
